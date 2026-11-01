@@ -1,0 +1,130 @@
+Project Name : Address Book
+
+Description : This project is used to store contact details like:
+              1. Name
+              2. Phone Number
+              3. E-mail
+
+              We perform different operations on these contacts, such as:
+              1. Create New Contact
+              2. Save Contact
+              3. Edit Contact
+              4. Search Contact
+              5. Delete Contact
+              6. List All Contacts
+
+              First, we initialize the contacts and then perform the required
+              operations,to perform all we are providing 3 attempts.
+
+Features :
+          1. Create New Contact
+          2. Search Contact
+          3. Edit Contact
+          4. Delete Contact
+          5. List All Contacts
+          6. Save and Exit
+
+
+1. Create New Contact
+
+        1. We have created three functions to check all validations required
+           for creating a contact.
+
+           Function 1: Check Phone Number Validation
+           Function 2: Check Name Validation
+           Function 3: Check E-mail Validation
+
+           Validations :
+
+           Name :
+           1. The name must be unique.
+           2. The name must contain a minimum of 3 characters.
+           3. Only one space is allowed between two words.
+           4. The name must contain only alphabets and spaces.
+              Digits and other special characters are not allowed.
+
+           Phone :
+           1. The phone number must be unique.
+           2. The phone number must contain exactly 10 digits.
+           3. Only digits are allowed. No other characters are allowed.
+           4. The first digit must be in the range of 6 to 9.
+
+           E-mail :
+           1. The e-mail address must contain only one '@' character
+              and one '.' character.
+           2. The e-mail address must not start with '@', and no extra
+              characters are allowed after the domain.
+           3. The e-mail address must contain only lowercase alphabets.
+           4. Only lowercase alphabets, digits, '@', and '.' are allowed.
+              Other characters are not allowed.
+           5. The e-mail address must be unique.
+
+        2. If all validations are successful, the contact is stored in
+           the Address Book.
+
+        3. After successfully storing the contact, the user can continue
+           with other operations.
+
+
+2. Search Contact
+
+        1. In this operation, we search for contacts stored in the
+           Address Book.
+
+        2. The user can enter any keyword, such as some characters of
+           a name, some digits of a phone number, or an e-mail address.
+
+        3. After searching, if the keyword matches any contact details,
+           the program displays the complete contact information.
+
+           If more than one contact is found, the user is asked to enter
+           the serial number of the required contact, and the program
+           displays that particular contact.
+
+        4. If no contact is found, the program displays the message:
+           "Contact not found. Please try again."
+
+
+3. Edit Contact
+
+        1. In this operation, the user must first search for the contact
+           using the same method as the Search Contact operation.
+
+        2. If the contact is not found, the user must search again using
+           valid contact details.
+
+        3. If the contact is found, the user must select the contact
+           that they want to edit.
+
+        4. The user can edit the Name, Phone Number, or E-mail Address.
+           The updated information must pass the same validation rules
+           used while creating a new contact.
+
+        5. After successfully editing the contact, the updated details
+           are saved in the Address Book.
+
+
+4. Delete Contact
+
+        1. First, the user searches for the contact that they want
+           to delete.
+
+        2. Before deleting the contact, the program asks the user
+           for confirmation.
+
+        3. After confirmation, the selected contact is deleted
+           from the Address Book.
+
+
+5. List All Contacts
+
+        1. In this operation, the program displays all contacts
+           available in the Address Book.
+
+
+6. Save and Exit
+
+        1. In this operation, all Address Book contacts are saved
+           to a file.
+
+        2. After saving all contacts, the program exits.
